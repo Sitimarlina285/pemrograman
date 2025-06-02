@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruang KopiKupi - Pangandaran</title>
+    <link rel="icon" href="../img/logo.webp" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="blur-background"></div>
+    
+   <header class="header">
+        <h1><a href="../index.html">Ruang KopiKupi - Pangandaran</a></h1>
+        <div>
+            <select class="header-dropdown" onchange="location.href=this.value">
+                <option value="">Pilih Kategori</option>
+                <option value="makanan.html" >Makanan</option>
+                <option value="minuman.html">Minuman</option>
+                <option value="snack.html">Snack</option>
+            </select>
+        </div>
+    </header>
+  <div class="content">
+    <div class="menu-container">
+   <div class="product-card">
+        <img src="../img/nasgor.jpg" height="200px" width="200px" />
+        <button class="product-button"
+          data-img="../img/nasgor.jpg"
+          data-title="Iced Coffee Milk Palm Sugar"
+          data-desc="Nasi goreng spesial dengan campuran <em>udang segar</em>, <em>cumi</em>,
+          dan <em>kerang</em>, dibumbui rempah pilihan untuk cita rasa laut yang kaya dan lezat.">
+          Nasi Goreng Spesial 
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Popup -->
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <img id="popup-img" src="" alt="" />
+      <p id="popup-desc"></p>
+      <span class="close-button" id="close-popup">&times;</span>
+    </div>
+  </div>
+
+    
+<script src="../js/script.js" defer></script>
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruang KopiKupi - Pangandaran</title>
+    <link rel="icon" href="../img/logo.webp" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="blur-background"></div>
+    
+    <header class="header">
+        <h1><a href="../index.html">Ruang KopiKupi - Pangandaran</a></h1>
+        <div>
+            <select class="header-dropdown" onchange="location.href=this.value">
+                <option value="">Pilih Kategori</option>
+                <option value="makanan.html">Makanan</option>
+                <option value="minuman.html">Minuman</option>
+                <option value="snack.html">Snack</option>
+            </select>
+        </div>
+    </header>
+
+     <div class="content">
+    <div class="menu-container">
+
+      <div class="product-card">
+        <img src="../img/burger.jpg" width="200" height="200">
+        <button class="product-button" 
+                data-img="../img/burger.jpg"
+                data-desc="Perpaduan <em>beef patty</em> yang juicy, <em>lelehan keju cheddar</em>, dan <em>roti brioche</em> yang lembut — disajikan dengan sayuran segar dan saus spesial rumah.">
+          Classic Beef Cheeseburger
+        </button>
+      </div>
+
+      <div class="product-card">
+        <img src="../img/kentang-goreng.jpg" width="200" height="200">
+        <button class="product-button" 
+                data-img="../img/kentang-goreng.jpg"
+                data-desc="Potongan kentang pilihan yang digoreng hingga <em>renyah keemasan</em>, disajikan dengan taburan <em>garam halus</em> dan pilihan saus favorit.">
+          French fries
+        </button>
+      </div>
+
+      <div class="product-card">
+        <img src="../img/paperoni chezze.jpg" width="200" height="200">
+        <button class="product-button" 
+                data-img="../img/paperoni chezze.jpg"
+                data-desc="Pizza tipis berlapis <em>saus tomat spesial</em>, <em>keju mozzarella leleh</em>, dan <em>irisan pepperoni</em> yang gurih — dipanggang sempurna untuk cita rasa klasik yang menggoda.">
+          Pepperoni and Cheese Pizza
+        </button>
+      </div>
+
+      <div class="product-card">
+        <img src="../img/roti-bakar.jpg" width="200" height="200">
+        <button class="product-button" 
+                data-img="../img/roti-bakar.jpg"
+                data-desc="Roti tebal yang dibakar hingga <em>renyah di luar</em> dan <em>lembut di dalam</em>, diisi dengan <em>lelehan keju</em> dan <em>coklat manis</em> — perpaduan rasa gurih dan manis yang pas untuk teman ngopi.">
+          Chocolate Cheese Toast
+        </button>
+      </div>
+
+      <div class="product-card">
+        <img src="../img/pisang-goreng.jpg" width="200" height="200">
+        <button class="product-button" 
+                data-img="../img/pisang-goreng.jpg"
+                data-desc="Pisang pilihan yang dibalut adonan gurih dan digoreng hingga <em>renyah keemasan</em>, sempurna sebagai cemilan manis yang hangat dan nikmat.">
+          Fried Bananas
+        </button>
+      </div>
+
+      <div class="product-card">
+        <img src="../img/singkong.jpg" width="200" height="200">
+        <button class="product-button" 
+                data-img="../img/singkong.jpg"
+                data-desc="Singkong segar yang digoreng hingga <em>renyah di luar</em> dan <em>lembut di dalam</em>, disajikan dengan taburan <em>keju parut</em> yang gurih dan lezat.">
+          Cheese Fried Cassava
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Popup -->
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <span class="close-button" id="close-popup">&times;</span>
+      <img id="popup-img" src="" alt="Popup Image">
+      <p id="popup-desc"></p>
+    </div>
+  </div>
+<script src="../js/script.js" defer></script>
+</body>
+</html>

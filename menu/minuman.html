@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruang KopiKupi - Pangandaran</title>
+    <link rel="icon" href="../img/logo.webp" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="blur-background"></div>
+    
+   <header class="header">
+        <h1><a href="../index.html">Ruang KopiKupi - Pangandaran</a></h1>
+        <div>
+            <select class="header-dropdown" onchange="location.href=this.value">
+                <option value="">Pilih Kategori</option>
+                <option value="makanan.html">Makanan</option>
+                <option value="minuman.html">Minuman</option>
+                <option value="snack.html">Snack</option>
+            </select>
+        </div>
+    </header>
+
+  <div class="content">
+    <div class="menu-container">
+      <!-- Produk 1 -->
+      <div class="product-card">
+        <img src="../img/capucino.webp" height="200px" width="200px" />
+        <button class="product-button"
+          data-img="../img/capucino.webp"
+          data-title="Hot Coffe Cappucino"
+          data-desc="Perpaduan <i>espresso</i>, <i>steamed milk</i>, dan <i>milk foam</i> dengan rasio 1:1:1">
+          Hot Coffe Cappucino
+        </button>
+      </div>
+
+      <!-- Produk 2 -->
+      <div class="product-card">
+        <img src="../img/americano.jpg" height="200px" width="200px" />
+        <button class="product-button"
+          data-img="../img/americano.jpg"
+          data-title="Hot Coffe Americano"
+          data-desc="Espresso pekat yang dicampur dengan <em>hot water</em>, menghasilkan kopi hitam yang <em>smooth</em> dan <em>bold</em>, cocok untuk yang suka <em>simplicity</em>">
+          Hot Coffe Americano
+        </button>
+      </div>
+
+      <!-- Produk 3 -->
+      <div class="product-card">
+        <img src="../img/kopisusu.jpg" height="200px" width="200px" />
+        <button class="product-button"
+          data-img="../img/kopisusu.jpg"
+          data-title="Hot Coffe Milk"
+          data-desc="Kopi hitam pekat yang dicampur dengan <em>steamed milk</em>, memberikan rasa yang creamy dan manis natural, favorit untuk segala suasana.">
+          Hot Coffe Milk
+        </button>
+      </div>
+
+      <!-- Produk 4 -->
+      <div class="product-card">
+        <img src="../img/whitecream.jpg" height="200px" width="200px" />
+        <button class="product-button"
+          data-img="../img/whitecream.jpg"
+          data-title="Coffe White Cream"
+          data-desc="Perpaduan kopi hitam dengan <em>white cream</em> yang lembut, menghasilkan rasa <em>smooth</em> dan <em>creamy</em> yang memanjakan lidah">
+          Coffe White Cream
+        </button>
+      </div>
+
+      <!-- Produk 5 -->
+      <div class="product-card">
+        <img src="../img/Iced-Caramel-Macchiato-f4a10f9.jpg" height="200px" width="200px" />
+        <button class="product-button"
+          data-img="../img/Iced-Caramel-Macchiato-f4a10f9.jpg"
+          data-title="Iced Caramel Macchiato"
+          data-desc="Kombinasi <em>espresso</em>, <em>milk</em>, dan <em>caramel syrup</em> disajikan dengan es batu, memberikan rasa manis dan <em>refreshing</em> yang cocok dinikmati saat cuaca panas">
+          Iced Caramel Macchiato
+        </button>
+      </div>
+
+      <!-- Produk 6 -->
+      <div class="product-card">
+        <img src="../img/gulaaren.png" height="200px" width="200px" />
+        <button class="product-button"
+          data-img="../img/gulaaren.png"
+          data-title="Iced Coffee Milk Palm Sugar"
+          data-desc="Perpaduan kopi hitam, <em>fresh milk</em>, dan <em>palm sugar syrup</em> yang khas, menciptakan rasa manis alami dan aroma yang <em>rich</em> dan <em>smooth</em>">
+          Iced Coffee Milk Palm Sugar
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Popup -->
+  <div class="popup" id="popup">
+    <div class="popup-content">
+      <img id="popup-img" src="" alt="" />
+      <p id="popup-desc"></p>
+      <span class="close-button" id="close-popup">&times;</span>
+    </div>
+  </div>
+
+    
+<script src="../js/script.js" defer></script>
+</body>
+</html>
