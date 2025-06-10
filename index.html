@@ -17,9 +17,12 @@
             <a href="tentang.html" class="dropdown-item">ℹ️ Tentang Kami</a>
             <a href="lokasi.html" class="dropdown-item">📍 Lokasi</a>
             <a href="kontak.html" class="dropdown-item">📞 Kontak</a>
+            <a href="galeri.html" class="dropdown-item">📸 Galeri</a>
         </div>
     </div>
 
+
+    <br><br><br><br><br> <br><br><br><br><br> <br><br>
     <div class="main-content">
         <h1>Ruang KopiKupi - Pangandaran</h1>
         <a href="menu/minuman.html">
@@ -35,30 +38,7 @@
         </svg>
     </button>
 
-    <script>
-        function toggleDropdown() {
-            const dropdown = document.getElementById('dropdownMenu');
-            dropdown.classList.toggle('show');
-        }
-
-        // Close dropdown when clicking outside
-        window.onclick = function(event) {
-            if (!event.target.matches('.menu-image') && !event.target.matches('.menu-image img')) {
-                const dropdown = document.getElementById('dropdownMenu');
-                if (dropdown.classList.contains('show')) {
-                    dropdown.classList.remove('show');
-                }
-            }
-        }
-
-        function openWhatsApp() {
-            const phoneNumber = '6285323494100';
-            const message = 'Halo Ruang KopiKupi! Saya ingin mengetahui informasi lebih lanjut tentang menu dan layanan Anda.';
-            const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-            
-            window.open(whatsappUrl, '_blank');
-        }
-    </script>
+  <script src="script.js" defer></script>
      
 </body>
 </html>
